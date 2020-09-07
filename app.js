@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('view engine','ejs');
 
-mongoose.connect('mongodb+srv://Nishant:Ok123456@@cluster0-vzhrm.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true,
+mongoose.connect('mongodb+srv://Nishant:<password>@cluster0-vzhrm.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true,
 useUnifiedTopology: true},(err,res)=>{
     if(err){
         console.log(err);
